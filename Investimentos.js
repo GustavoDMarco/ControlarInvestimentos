@@ -31,7 +31,7 @@ function ResultadoMês(mesReferencia, mesPagamento, totalInvestidoMes) {        
         },
 
         dividendYieldMes(){                                     //Calcula o dividend yield e imprime
-            let dy = (this.somaMes() / this.totalInvestidoMes)*100
+            let dy = ((this.somaMes() / this.totalInvestidoMes)*100).toFixed(2)
             console.log("DY = " + dy)
         }
 
@@ -58,7 +58,7 @@ function ResultadoAno(ano, totalInvestidoAno) {               //Objeto para rela
 
         dividendYieldAno(){                                     //Calcula dividend yield do ano       
             let dy =0
-            dy = (this.TotalRecebido() / this.totalInvestidoAno)*100
+            dy = ((this.TotalRecebido() / this.totalInvestidoAno)*100).toFixed(2)
             return dy
         },
 
